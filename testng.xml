@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org">
+<suite name="Internshala Test Suite" verbose="2">
+    
+    <test name="Functional Regression Flow">
+        <classes>
+            <!-- Points to your test class inside the 'tests' package -->
+           
+            <class name="InternshipTest"/>>
+        </classes>
+    </test>
+    
+</suite>
