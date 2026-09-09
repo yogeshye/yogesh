@@ -27,30 +27,15 @@ public class LoginPage extends Basepage{
 	    	  wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
 	    	  wait.until(ExpectedConditions.elementToBeClickable(emailField)).clear();
 	    	 wait.until(ExpectedConditions.elementToBeClickable(emailField)).sendKeys(email);
-	    	 try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+ 
 	    	 wait.until(ExpectedConditions.elementToBeClickable(passwordField)).clear();
 	         wait.until(ExpectedConditions.elementToBeClickable(passwordField)).sendKeys(password);
 	         new WebDriverWait(driver, Duration.ofSeconds(600));
-	         try {
-				Thread.sleep(1200);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} 
+ 
  	         WebElement submit = wait.until(ExpectedConditions.elementToBeClickable(submitLoginBtn));
- 	         try {
-				Thread.sleep(4000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+  
  	         
-	        //  submit.click();
+	          submit.click();
 	      
 	         
 	    }
